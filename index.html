@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Gallery Baran — Every Portrait Holds a Story.">
+  <title>Gallery Baran | Every Portrait Holds a Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Vazirmatn:wght@300;400;500;600;700&family=Marhey:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <div id="loginView" class="login-screen">
+    <div class="login-art">
+      <div class="login-art-image"></div>
+      <div class="login-art-copy">
+        <span class="eyebrow">A PRIVATE WORLD OF ART</span>
+        <h1>Every portrait<br><i>holds a story.</i></h1>
+        <p>جایی برای ثبت لحظه‌هایی که با مداد جان می‌گیرند.</p>
+      </div>
+      <div class="login-art-index">01 <span>—</span> 04</div>
+    </div>
+    <div class="login-panel">
+      <div class="brand-lockup">
+        <span class="brand-mark">B.</span>
+        <span><b>GALLERY BARAN</b><small>PERSONAL ART STUDIO</small></span>
+      </div>
+      <div class="login-form-wrap">
+        <span class="eyebrow gold">WELCOME BACK, ARTIST</span>
+        <h2>ورود به دنیای باران</h2>
+        <p class="muted">این فضای کوچک، فقط برای تو ساخته شده.</p>
+        <form id="loginForm" class="stack-form">
+          <label>نام کاربری<input id="loginUser" autocomplete="username" value="Baran" required></label>
+          <label>رمز عبور<div class="password-field"><input id="loginPassword" type="password" autocomplete="current-password" placeholder="رمز عبور را وارد کن" required><button type="button" class="reveal-btn" data-reveal="loginPassword" aria-label="نمایش رمز">◉</button></div></label>
+          <p id="loginError" class="form-error" role="alert"></p>
+          <button class="btn btn-gold btn-wide" type="submit">ورود به استودیو <span>↗</span></button>
+        </form>
+        <div class="login-foot"><span class="tiny-line"></span><span>MADE WITH LOVE, FOR BARAN</span><span class="tiny-line"></span></div>
+      </div>
+      <div class="login-bottom">A quiet place for your imagination.</div>
+    </div>
+  </div>
+
+  <div id="appView" class="app-shell hidden">
+    <aside class="sidebar" id="sidebar">
+      <div class="side-top">
+        <a href="#" class="brand-lockup side-brand" data-page="overview">
+          <span class="brand-mark">B.</span>
+          <span><b>GALLERY BARAN</b><small>PERSONAL ART STUDIO</small></span>
+        </a>
+        <button id="sidebarClose" class="icon-btn mobile-only" aria-label="بستن منو">×</button>
+      </div>
+      <div class="side-profile">
+        <div class="avatar">B</div>
+        <div><b>Baran</b><small>Artist's private space</small></div>
+        <span class="online-dot"></span>
+      </div>
+      <nav class="side-nav" aria-label="ناوبری اصلی">
+        <span class="nav-caption">STUDIO</span>
+        <button class="nav-item active" data-page="overview"><span class="nav-icon">⌂</span><span>نمای کلی</span><kbd>01</kbd></button>
+        <button class="nav-item" data-page="gallery"><span class="nav-icon">▧</span><span>گالری باران</span><kbd>02</kbd></button>
+        <button class="nav-item" data-page="vision"><span class="nav-icon">✧</span><span>ایده‌های آینده</span><kbd>03</kbd></button>
+        <button class="nav-item" data-page="journal"><span class="nav-icon">▤</span><span>دفتر هنری</span><kbd>04</kbd></button>
+        <button class="nav-item" data-page="evolution"><span class="nav-icon">⌁</span><span>مسیر پیشرفت</span><kbd>05</kbd></button>
+        <span class="nav-caption nav-caption-gap">MY COLLECTION</span>
+        <button class="nav-item" data-page="wip"><span class="nav-icon">◌</span><span>در حال طراحی</span></button>
+        <button class="nav-item" data-page="inspiration"><span class="nav-icon">⌘</span><span>تابلوی الهام</span></button>
+        <button class="nav-item" data-page="collections"><span class="nav-icon">▦</span><span>مجموعه‌ها</span></button>
+        <button class="nav-item" data-page="favorites"><span class="nav-icon">♡</span><span>علاقه‌مندی‌ها</span></button>
+        <span class="nav-caption nav-caption-gap">PERSONAL</span>
+        <button class="nav-item" data-page="calendar"><span class="nav-icon">▦</span><span>تقویم هنری</span></button>
+        <button class="nav-item" data-page="letter"><span class="nav-icon">✉</span><span>گوشه دنج باران</span><span class="nav-spark">✦</span></button>
+        <button class="nav-item" data-page="settings"><span class="nav-icon">⚙</span><span>تنظیمات</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="side-quote"><span>“</span><p>Art is the quietest<br>form of courage.</p><small>— FOR YOUR JOURNEY</small></div>
+        <button id="logoutBtn" class="logout-btn"><span>↪</span> خروج از استودیو</button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button id="menuToggle" class="icon-btn mobile-only" aria-label="باز کردن منو">☰</button>
+        <div class="breadcrumb"><span>GALLERY BARAN</span><i>/</i><b id="currentSection">نمای کلی</b></div>
+        <div class="top-actions">
+          <div class="today-label"><span class="status-dot"></span><span id="todayText">YOUR CREATIVE SPACE</span></div>
+          <button class="icon-btn" id="quickAddBtn" title="افزودن اثر">＋</button>
+          <div class="top-avatar">B</div>
+        </div>
+      </header>
+      <div id="pageContent" class="page-content"></div>
+      <footer class="app-footer"><span>GALLERY BARAN</span><span>EVERY PORTRAIT HOLDS A STORY <b>✦</b></span><span>CRAFTED WITH CARE</span></footer>
+    </main>
+    <div id="sidebarShade" class="sidebar-shade"></div>
+  </div>
+
+  <div id="modalRoot"></div>
+  <div id="toastRoot" class="toast-root" aria-live="polite"></div>
+  <div id="lightbox" class="lightbox hidden"><button class="lightbox-close" id="lightboxClose">×</button><img id="lightboxImage" alt=""><div id="lightboxCaption"></div></div>
+  <script src="assets/js/db.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
